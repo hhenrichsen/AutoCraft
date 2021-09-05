@@ -1,5 +1,6 @@
-package fliens.autocraft;
+package fliens.autocraft.util;
 
+import fliens.autocraft.Position;
 import org.bukkit.Material;
 import org.bukkit.NamespacedKey;
 import org.bukkit.inventory.*;
@@ -201,16 +202,16 @@ public class RecipeUtil {
     }
 
     private static Object[][] reduceArray(Object[][] array) {
-        ArrayList<Pos> positions = new ArrayList<>();
+        ArrayList<Position> positions = new ArrayList<>();
         for (int y = 0; y < array.length; y++)
             for (int x = 0; x < array[y].length; x++) {
                 if (array[y][x] != null)
-                    positions.add(new Pos(x, y));
+                    positions.add(new Position(x, y));
             }
 
-        Pos upperLeft = new Pos(array.length - 1, array[0].length - 1);
-        Pos lowerRight = new Pos(0, 0);
-        for (Pos pos : positions) {
+        Position upperLeft = new Position(array.length - 1, array[0].length - 1);
+        Position lowerRight = new Position(0, 0);
+        for (Position pos : positions) {
             if (pos.y < upperLeft.y)
                 upperLeft.y = pos.y;
             if (pos.x < upperLeft.x)

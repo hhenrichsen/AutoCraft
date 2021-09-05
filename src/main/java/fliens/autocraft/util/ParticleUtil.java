@@ -1,4 +1,4 @@
-package fliens.autocraft;
+package fliens.autocraft.util;
 
 import org.bukkit.Location;
 import org.bukkit.World;

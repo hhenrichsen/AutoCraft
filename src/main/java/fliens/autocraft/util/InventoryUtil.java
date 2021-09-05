@@ -1,4 +1,4 @@
-package fliens.autocraft;
+package fliens.autocraft.util;
 
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
