@@ -44,7 +44,6 @@ public class AutoCraft extends JavaPlugin {
     @Override
     public void onEnable() {
         super.onEnable();
-        getLogger().info("AutoCraft plugin started");
 
         saveDefaultConfig();
         craftCooldown = getConfig().getLong("craftCooldown");
@@ -72,7 +71,6 @@ public class AutoCraft extends JavaPlugin {
     @Override
     public void onDisable() {
         super.onDisable();
-        getLogger().info("AutoCraft plugin stopped");
     }
 
     /*
