@@ -19,11 +19,11 @@
 
 package fliens.autocraft;
 
-class Pos { // Moved to a separate file
-    int x;
-    int y;
+public class Position { // Moved to a separate file
+    public int x;
+    public int y;
 
-    public Pos(int x, int y) {
+    public Position(int x, int y) {
         this.x = x;
         this.y = y;
     }
